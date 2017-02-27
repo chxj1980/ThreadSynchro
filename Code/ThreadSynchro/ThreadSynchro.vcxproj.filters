@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="用户态-线程同步">
+      <UniqueIdentifier>{4009a6fa-70f0-4233-ad25-07a6840cf982}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="内核态-线程同步">
+      <UniqueIdentifier>{a674f1da-c657-4296-8d93-50a6e6a2a47e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="无-线程同步">
+      <UniqueIdentifier>{7336dedc-942b-462b-9826-0e316a3f6f1c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MyCriticalSection.h">
+      <Filter>用户态-线程同步</Filter>
+    </ClInclude>
+    <ClInclude Include="MyRWLock.h">
+      <Filter>用户态-线程同步</Filter>
+    </ClInclude>
+    <ClInclude Include="MyInterLock.h">
+      <Filter>用户态-线程同步</Filter>
+    </ClInclude>
+    <ClInclude Include="MySemaphore.h">
+      <Filter>内核态-线程同步</Filter>
+    </ClInclude>
+    <ClInclude Include="MyMutex.h">
+      <Filter>内核态-线程同步</Filter>
+    </ClInclude>
+    <ClInclude Include="MyEvent.h">
+      <Filter>内核态-线程同步</Filter>
+    </ClInclude>
+    <ClInclude Include="MyObject.h">
+      <Filter>无-线程同步</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MyCriticalSection.cpp">
+      <Filter>用户态-线程同步</Filter>
+    </ClCompile>
+    <ClCompile Include="MyRWLock.cpp">
+      <Filter>用户态-线程同步</Filter>
+    </ClCompile>
+    <ClCompile Include="MyInterLock.cpp">
+      <Filter>用户态-线程同步</Filter>
+    </ClCompile>
+    <ClCompile Include="MySemaphore.cpp">
+      <Filter>内核态-线程同步</Filter>
+    </ClCompile>
+    <ClCompile Include="MyMutex.cpp">
+      <Filter>内核态-线程同步</Filter>
+    </ClCompile>
+    <ClCompile Include="MyEvent.cpp">
+      <Filter>内核态-线程同步</Filter>
+    </ClCompile>
+    <ClCompile Include="MyObject.cpp">
+      <Filter>无-线程同步</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
